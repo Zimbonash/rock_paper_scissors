@@ -1,3 +1,4 @@
+$(document).ready(()=>{
 const computerChoiceDisplay = document.getElementById('computer-choice')
 const userChoiceDisplay = document.getElementById('user-choice')
 const resultDisplay = document.getElementById('result')
@@ -17,10 +18,13 @@ let resultShow
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e)=>{
   userChoice =  e.target.id //assign the id of the clicked button to the userChoice variable 
   userChoiceDisplay.innerHTML = userChoice
+  $("#chat").show()
+  $(".chat").show()
   getComputerChoice()
   getResult()
+
 //   $(".results").fadeIn();
-console.log(userChoice.innerHTML)
+// console.log(userChoice.innerHTML)
 }))
 
 console.log(possibleChoices)
@@ -37,7 +41,7 @@ function getComputerChoice(){
     if(randomNumber === 3){
         computerChoice = 'Paper'
     }
-    
+
     computerChoiceDisplay.innerHTML = computerChoice
 }
 
@@ -69,8 +73,12 @@ function getResult(){
     
 }
 
+
+
 //start game using jquery 
 $(".start-btn").click(function(){
     $(".game-section").show();
     $(".start-btn").hide()
   })
+
+})

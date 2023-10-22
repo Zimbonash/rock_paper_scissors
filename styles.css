@@ -2,17 +2,22 @@
     font-family: cursive;
 }
 body{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     min-width: 800px;
     background-color: rgb(227, 247, 255);
     justify-content: center;
     align-items: center;
 }
+img{
+    height: auto;
+}
 .header{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: midnightblue; */
+    padding: 20px;
 }
 .logo{
     width: 250px;
@@ -22,11 +27,13 @@ body{
     display: flex;
 }
 .game-choice-1{
+    display: flex;
     flex: 1;
     text-align: center;
     justify-content: center;
 }
 .game-choice-2{
+    display: flex;
     flex: 1;
     text-align: center;
     justify-content: center;
@@ -74,4 +81,13 @@ button{
     color: white;
     font-weight: 600;
     font-family: cursive;
+}
+#user-choice, #computer-choice{
+    position: absolute;
+    margin-left: -120px;
+    margin-top: 50px;
+    color: rgb(252, 252, 252);
+}
+#chat{
+    
 }
