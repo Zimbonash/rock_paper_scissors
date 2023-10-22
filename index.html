@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+  <div class="header">
+    <img src="./img/logo.png" alt="" class="logo">
+  </div>
+
+  <div class="start-game">
+    <button class="start-btn">START</button>
+  </div>
+  <div class="game-section">
+      <div class="game-choices">
+        <div class="game-choice-1">
+          <h2> <img src="./img/man.png" width="100px">  <span id="user-choice"></span></h2>
+        </div>
+        <div class="game-choice-2">
+          <h2> <img src="./img/robot.png" width="100px"> <span id="computer-choice"></span></h2>
+        </div>
+      </div>
+
+      <div class="results">
+          <div>
+            <h2> Result: <span id="result"> </span></h2>
+          </div>
+      </div>
+
+      <div class="controlls">
+        
+          <button class="controller" id="Rock"><img src="./img/rock.svg" width="20px"/><span> Rock</span></button>
+       
+          <button class="controller" id="Paper"><img src="./img/paper.svg" width="20px"/><span> Paper</span></button>
+
+          <button class="controller" id="Scissors"><img src="./img/scissors.svg" width="20px"/><span> Scissors</span></button>
+
+      </div>
+  </div>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
